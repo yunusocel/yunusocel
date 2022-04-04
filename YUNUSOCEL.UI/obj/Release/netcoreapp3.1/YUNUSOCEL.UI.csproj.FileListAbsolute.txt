@@ -1,0 +1,8 @@
+/Users/yocel/Projects/YUNUSOCEL/YUNUSOCEL.UI/obj/Release/netcoreapp3.1/YUNUSOCEL.UI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yocel/Projects/YUNUSOCEL/YUNUSOCEL.UI/obj/Release/netcoreapp3.1/YUNUSOCEL.UI.AssemblyInfoInputs.cache
+/Users/yocel/Projects/YUNUSOCEL/YUNUSOCEL.UI/obj/Release/netcoreapp3.1/YUNUSOCEL.UI.AssemblyInfo.cs
+/Users/yocel/Projects/YUNUSOCEL/YUNUSOCEL.UI/obj/Release/netcoreapp3.1/YUNUSOCEL.UI.csproj.CoreCompileInputs.cache
+/Users/yocel/Projects/YUNUSOCEL/YUNUSOCEL.UI/obj/Release/netcoreapp3.1/YUNUSOCEL.UI.MvcApplicationPartsAssemblyInfo.cs
+/Users/yocel/Projects/YUNUSOCEL/YUNUSOCEL.UI/obj/Release/netcoreapp3.1/YUNUSOCEL.UI.MvcApplicationPartsAssemblyInfo.cache
+/Users/yocel/Projects/YUNUSOCEL/YUNUSOCEL.UI/obj/Release/netcoreapp3.1/YUNUSOCEL.UI.RazorAssemblyInfo.cache
+/Users/yocel/Projects/YUNUSOCEL/YUNUSOCEL.UI/obj/Release/netcoreapp3.1/YUNUSOCEL.UI.RazorAssemblyInfo.cs

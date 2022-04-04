@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+    <title>@ViewData["Title"] - Yunus Öcel</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="icon" href="images/logo.png" />
+
+    <style>
+        .bg-yellow {
+            background-color: #f7c04e !important;
+        }
+
+        .p {
+            font-family: fantasy !important;
+        }
+
+        p {
+            line-height: 2;
+        }
+
+        .hr-style {
+            position:relative;
+            margin-top: 50px;
+            border-style: dotted none none;
+            border-width: 5px;
+            border-color: #E5E7E9;
+            width: 4%;
+       
+        }
+
+        ul.navbar-nav a:hover {
+            color: #48C9B0 !important;
+        }
+
+
+        .hr-style1 {
+            display: block;
+            margin-top: 0.5em;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #48C9B0;
+            width: 50%;
+           
+        }
+
+        .img-style1 {
+            border-radius: 100%;
+            margin-top: 0;
+            background-position: center;
+            height: 400px;
+            width: 400px;
+            
+        }
+
+        .img-style2 {
+            border-radius: 100%;
+            position: relative;
+            height: 350px;
+            width: 350px;
+        }
+
+        .img-style3 {
+            border-radius: 100%;
+            margin-top: 3%;
+            position: relative;
+            height: 350px;
+            width: 350px;
+        }
+
+        .name {
+            position:relative;
+            font-family: 'Brush Script MT', Bradley Hand, Apple Chancery, sans-serif;
+            font-size: 1000%;
+            color: #48C9B0;
+            vertical-align: central;
+        }
+
+        .def {
+            position: relative;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 150%;
+            color: #66bfbf;
+            margin-top: 1%;
+        }
+
+        .top-container {
+            background-position: center;
+            background-size: 100% 100%;
+            margin: 0 auto 0 auto;
+            position: relative;
+            background-color: #FDFEFE;
+            height: 60rem;
+        }
+
+        .middle-container {
+            position: relative;
+            background-color: #FDFEFE;
+            align-items: center;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom:0;
+            height: auto;
+        }
+
+        .profile-section {
+            position: relative;
+            display: inline-block;
+            margin-top: 0;
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 80%;
+        }
+
+        .home-screen {
+            vertical-align:;
+            position: relative;
+            margin-top: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0;
+            height: auto;
+            width: auto;
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        .footer {
+            position: relative;
+            background-color: #66BFBF;
+            margin-top: 50px;
+            margin-bottom: 0;
+            height: auto;
+            width: 100%;
+        }
+
+        .footer-link {
+            font-family: 'Montserrat',sans-serif;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+            .footer-link:visited {
+                color: #11999e;
+            }
+
+            .footer-link:active {
+                color: #566573;
+            }
+
+            .footer-link:hover {
+                color: #EAF6F6;
+            }
+
+        .dropdown-item:hover {
+            color: #66BFBF;
+        }
+
+        .contact-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+        }
+
+        .contact-me {
+           height:auto;
+           margin-bottom:50px;
+        }
+
+        .btn-primary {
+            background: #11cdd4;
+            background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+            background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+            background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+            background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+            background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+            -webkit-border-radius: 8;
+            -moz-border-radius: 8;
+            border-radius: 8px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+        }
+
+            .btn-primary:hover {
+                background: #30e3cb;
+                background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+                background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+                background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+                background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+                background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+                color: white;
+                text-decoration: none;
+            }
+
+
+        h2 {
+            color: #48C9B0;
+            margin-top: 5%;
+        }
+
+        h3 {
+            margin-top: 3%;
+            color: #48C9B0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+            a:visited {
+                color: black;
+            }
+
+            a:active {
+                color: black;
+            }
+
+            a:hover {
+                color: #48C9B0;
+            }
+
+        .quotes {
+            color: #48C9B0;
+        }
+
+        #slide {
+            transition: opacity 1s;
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:5%">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="mr-auto" id="google_translate_element"></div>
+            <script type="text/javascript">// <![CDATA[
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+                }
+// ]]></script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about-me">About me <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        My Heart Beats in...
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Madrid, Spain</a>
+                        <a class="dropdown-item" href="#">London, UK</a>
+                        <a class="dropdown-item" href="#">Athens, Greece</a>
+                        <a class="dropdown-item" href="#">Thessaloniki, Greece</a>
+                        <a class="dropdown-item" href="#">Nafplio, Greece</a>
+                        <a class="dropdown-item" href="#">Santorini, Greece</a>
+                        <a class="dropdown-item" href="#">Rome, Italy</a>
+                        <a class="dropdown-item" href="#">Barcelona, Spain</a>
+                        <a class="dropdown-item" href="#">Paris, France</a>
+                        <a class="dropdown-item" href="#">Brussels, Belgium</a>
+                        <a class="dropdown-item" href="#">Amsterdam, Netherlands</a>
+                        <a class="dropdown-item" href="#">Baku, Azerbaijan</a>
+                    </div>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#get-in-touch">Contact me</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</head>
+
+<body>
+    <div class="top-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+        
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="height:60rem">
+                    <img class="d-block w-100" id="slide" src="images/athens/IMG_6631.JPG" alt="0th slide">
+                </div>
+                <div class="carousel-item" style="height: 60rem">
+                    <img class="d-block w-100" id="slide" src="images/athens/IMG_6463.JPG" alt="1st slide">
+                </div>
+                <div class="carousel-item" style="height: 60rem">
+                    <img class="d-block w-100" id="slide" src="images/barcelona/IMG_9120.JPG" alt="2nd slide">
+                </div>
+                <div class="carousel-item" style="height: 60rem">
+                    <img class="d-block w-100" id="slide" src="images/rome/IMG_7951.JPG" alt="3rd slide">
+                </div>
+                <div class="carousel-item" style="height: 60rem">
+                    <img class="d-block w-100" id="slide" src="images/rome/IMG_7597.JPG" alt="4th slide">
+                </div>
+                <div class="carousel-item" style="height: 60rem">
+                    <img class="d-block w-100" id="slide" src="images/paris/IMG_9323.JPG" alt="5th slide">
+                </div>
+                <div class="carousel-item" style="height: 60rem">
+                    <img class="d-block w-100" id="slide" src="images/paris/IMG_9792.JPG" alt="6th slide">
+                </div>
+                <div class="carousel-item" style="height: 60rem">
+                    <img class="d-block w-100"  id="slide" src="images/amsterdam/IMG_0398.JPG" alt="7th slide">
+                </div>
+                <div class="carousel-item" style="height: 60rem">
+                    <img class="d-block w-100"  id="slide" src="images/amsterdam/IMG_0281.JPG" alt="8th slide">
+                </div>
+                <div class="carousel-item" style="height: 60rem">
+                    <img class="d-block w-100"  id="slide" src="images/brussels/IMG_9926.JPG" alt="9th slide">
+                </div>
+                <div class="carousel-item" style="height: 60rem">
+                    <img class="d-block w-100"  id="slide" src="images/brussels/IMG_9872.JPG" alt="10th slide">
+                </div>
+                <div class="home-screen">
+                    <h1 class="name">I'm Yunus.</h1>
+                    <h3 class="def">an <u>E</u>lectrical & <u>E</u>lectronics <u>E</u>ngineer</h3>
+                    <h3 class="def"><em>loves travelling by heart</em></h3>
+                </div>
+            </div>
+            <!--      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a> -->
+        </div>
+
+    </div>
+
+    <hr class="hr-style" />
+
+
+    <div class="middle-container">
+        <div class="profile">
+            <img class="img-style1" id="about-me" src="images/athens/IMG_1023.JPG" />
+            <h2 style="font-size:300%; margin-top:3%">Hello.</h2>
+            <p style="font-size:150%; margin:0 auto 0 auto">
+                Welcomeee and happy to see you on my page 🥳
+            </p>
+            <br>
+            <p style="font-size:150%; margin-right:10%; margin-left:10%; margin-bottom:0%">
+                I am Yunus, 25 years old. I live in Ankara due to work but i'm originally from Manisa, Turkey. I'm a Software Test Engineer
+                who loves coding and travelling but i'm not going to tell my academic career on this page.
+                If you get interested in <a href="https://yunusocel.github.io/yocel/"><em>my academic career</em></a>
+                you can check out by clicking on the link.
+            </p>
+            <br>
+            <br>
+            <p class="quotes" style="font-size:150%; margin:0 auto 0 auto"><em>"To write a memoir is to save something from the hand of death."</em></p>
+            <p style="font-size:150%; margin:0 auto 0 auto">André Gide</p>
+            <br>
+            <p style="font-size:150%; margin-right:10%; margin-left:10%; margin-bottom:0%">
+                I have decided to own a blog by thinking André Gide's
+                quote and post something related to me and my memories i have. I just didn't want them to stay with me
+                that's why i'm here to share my past journeys by beginning from my erasmus memories in my blog named
+                <em>My Heart Beats in</em> which is meaningful for me.
+                <br>
+
+            </p>
+            <hr class="hr-style">
+            <div class="profile-section">
+                <table style="height:auto; width:100%" cellspacing="20px" cellpadding="50px">
+                    <tr>
+                        <td width="40%">
+                            <img class="img-style3" src="images/athens/IMG_6763.JPG" alt="">
+                        </td>
+                        <td>
+                            <p  style="font-size:150%; margin-top:5%; margin-left:0%; margin-right:0; margin-bottom:0">
+                                <em style="color: #48C9B0">"My Heart Beats in..."</em>
+                            </p>
+                            <br/>
+                            <p style="font-size:150%; margin-top:0; margin-left:0%; margin-right:0; margin-bottom:10%">
+                                I created this blog thinking that you'll like it and make an effort for this.
+                                <br>
+                                I hope, you do ☺️
+                                <br>
+                                I'll be updating my blog regularly as i can after my new journeys.
+                                That's why let's take a look what you'll find on this page.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <hr class="hr-style1">
+                <table style="height:auto; width:100%" cellpadding="50px" cellspacing="20px">
+                    <tr>
+                        <td>
+                            <p style="font-size:150%; margin-top:5%; margin-right:0; margin-left:0; margin-bottom:0%">
+                                <em style="color: #48C9B0">"...suggestions, memories and photos."</em>
+                            </p>
+                            <br/>
+                            <p style="font-size:150%; margin-top:0; margin-right:0; margin-left:0; margin-bottom:10%">
+                                I'm going to be sharing <em>photos</em> i have taken, my <em>memories</em> i have and <em>suggestions</em> to do or <u>not</u> to do
+                                in places that i have traveled before.
+                                <br>
+                                You can read my articles from
+                                <a href="#navbarDropdownMenuLink"><em>my heart beats in</em></a> section and they could be beneficial to make a good plan..
+                            </p>
+                        </td>
+                        <td width="40%">
+                            <img class="img-style2" src="images/rome/IMG_7398.JPG" alt="">
+                        </td>
+                    </tr>
+                </table>
+                <hr class="hr-style1">
+                <table style="height:auto; width:100%" cellspacing="20px" cellpadding="50px">
+                    <tr>
+                        <td width="40%">
+                            <img class="img-style3" src="images/cologne/IMG_0431.JPG" alt="">
+                        </td>
+                        <td>
+                            <p style="font-size:150%; margin-top:5%; margin-left:0%; margin-right:0; margin-bottom:0%">
+                                <em style="color: #48C9B0">"A Cup of Coffee.."</em>
+                            </p>
+                            <br/>
+                            <p style="font-size:150%; margin-top:0%; margin-left:0%; margin-right:0; margin-bottom:10%">
+                                This is going to be a new long adventure which we will walk through together ✌️
+                                <br>
+                                That's why i highly recommend you..
+                                <br>
+                                <em>Just grab a cup of coffee, sit back and keep reading ☕️ </em>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <hr class="hr-style1">
+                <table style="height:auto; width:100%" cellpadding="50px" cellspacing="20px">
+                    <tr>
+                        <td>
+                            <p style="font-size:150%; margin-top:5%; margin-right:0; margin-left:0; margin-bottom:0">
+                                <em style="color: #48C9B0">"Get In Touch!"</em>
+                            </p>
+                            <br/>
+                            <p style="font-size:150%; margin-top:0; margin-right:0; margin-left:0; margin-bottom:10%">
+                                I'd like to remind that i'll keep developing my page and be adding new contents inside it.
+                                Also, you will be contributing for me and other people by sharing your memories, photos and
+                                thoughts in comment section in the following days.
+                                <br>
+                                <em>Don't hesitate to send me your feedback and contact me.</em>
+                            </p>
+                        </td>
+                        <td width="40%">
+                            <img class="img-style2" src="images/barcelona/IMG_8860.JPG" alt="">
+                        </td>
+                    </tr>
+                </table>
+                <hr class="hr-style1">
+                <table style="height:auto; width:100%" cellspacing="20px" cellpadding="50px">
+                    <tr>
+                        <td width="40%">
+                            <img class="img-style3" src="images/paris/IMG_9792.JPG" alt="">
+                        </td>
+                        <td>
+                            <p style="font-size:150%; margin-top:5%; margin-left:0%; margin-right:0">
+                                <em style="color: #48C9B0">"Let's get started.."</em>
+                            </p>
+                            <br/>
+                            <p style="font-size:150%; margin-top:0%; margin-left:0%; margin-right:0">     
+                                Anyway, i'm super excited to begin! And so glad to meet you :)
+                                <br>
+                                Happy reading!
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+        <hr class="hr-style">
+        <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <h3>If you love travelling by heart as much as i do...</h3>
+            <p>I'd like to meet you and make a plan together.</p>
+            <p>Let's take a dive into new adventures!</p>
+            <br>
+            <br>
+            <br>
+            <a class="btn-primary" id="get-in-touch" href="mailto:yunusocel.45@gmail.com">CONTACT ME</a>
+        </div>
+
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class="border-top footer text-muted p">
+            <table width="10%" cellspacing="0px" cellpadding="5px" style="margin-left:auto; margin-right:auto; margin-top:3%">
+                <tr>
+                    <td width="0%">
+                        <img class="contact-img" src="images/general/instagram.png" alt="instagram-img">
+                    </td>
+                    <td width="0.5%">
+                        <a class="footer-link" id="insta-id" href="https://www.instagram.com/sunuyleco/">Instagram</a>
+                    </td>
+                    <td width="0%">
+                        <img class="contact-img" src="images/general/linkedin.png" alt="linkedin-img">
+                    </td>
+                    <td width="0.5%">
+                        <a class="footer-link" id="linkedin-id" href="https://www.linkedin.com/in/yunus%C3%B6cel/">LinkedIn</a>
+                    </td>
+                    <td width="0%">
+                        <img class="contact-img" src="images/general/facebook.png" alt="fb-img">
+                    </td>
+                    <td width="0.5%">
+                        <a class="footer-link" style="font-family: 'Montserrat'" id="fb-id" href="https://www.facebook.com/yunus.ocel">Facebook</a>
+                    </td>
+                </tr>
+            </table>
+            <div class="container" style="text-align: center; font-family:'Montserrat',sans-serif; color:white; margin-top:2%">
+                <p style="margin-top:0; margin-bottom:0">Not allowed to use any photographs published on this website at different platforms.</p>
+                &copy; @DateTime.Now.Year - Yunus Öcel - <a class="footer-link" asp-area="" asp-controller="Pages" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+
+        @RenderSection("Scripts", required: false)
+</body>
+</html>

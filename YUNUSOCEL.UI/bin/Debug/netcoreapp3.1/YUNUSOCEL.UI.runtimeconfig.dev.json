@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/yocel/.dotnet/store/|arch|/|tfm|",
+      "/Users/yocel/.nuget/packages"
+    ]
+  }
+}
