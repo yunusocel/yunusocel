@@ -661,11 +661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yocel/Projects/YUNUSOCEL/YUNUSOCEL.UI/YUNUSOCEL.UI.csproj",
+      "projectUniqueName": "/Users/yocel/Projects/YUNUSOCEL/yunusocel/YUNUSOCEL.UI/YUNUSOCEL.UI.csproj",
       "projectName": "YUNUSOCEL.UI",
-      "projectPath": "/Users/yocel/Projects/YUNUSOCEL/YUNUSOCEL.UI/YUNUSOCEL.UI.csproj",
+      "projectPath": "/Users/yocel/Projects/YUNUSOCEL/yunusocel/YUNUSOCEL.UI/YUNUSOCEL.UI.csproj",
       "packagesPath": "/Users/yocel/.nuget/packages/",
-      "outputPath": "/Users/yocel/Projects/YUNUSOCEL/YUNUSOCEL.UI/obj/",
+      "outputPath": "/Users/yocel/Projects/YUNUSOCEL/yunusocel/YUNUSOCEL.UI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/yocel/.config/NuGet/NuGet.Config"

@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{4643BA26-29F8-4F51-81D1-BE09580F9F19}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="YUNUSOCEL.UI/Pages/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="YUNUSOCEL.UI/Pages/Shared/_Layout.cshtml" Line="24" Column="20" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="YUNUSOCEL" expanded="True">
+            <Node name="YUNUSOCEL.UI" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.YUNUSOCEL.UI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

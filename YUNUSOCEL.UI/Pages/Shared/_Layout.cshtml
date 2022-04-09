@@ -3,12 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <title>@ViewData["Title"] - Yunus Öcel</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="icon" href="images/logo.png" />
 
     <style>
+
         .bg-yellow {
             background-color: #f7c04e !important;
         }
@@ -22,13 +24,12 @@
         }
 
         .hr-style {
-            position:relative;
+            position: relative;
             margin-top: 50px;
             border-style: dotted none none;
             border-width: 5px;
             border-color: #E5E7E9;
             width: 4%;
-       
         }
 
         ul.navbar-nav a:hover {
@@ -43,7 +44,6 @@
             border-width: 1px;
             border-color: #48C9B0;
             width: 50%;
-           
         }
 
         .img-style1 {
@@ -52,7 +52,6 @@
             background-position: center;
             height: 400px;
             width: 400px;
-            
         }
 
         .img-style2 {
@@ -71,29 +70,33 @@
         }
 
         .name {
-            position:relative;
+            position: relative;
             font-family: 'Brush Script MT', Bradley Hand, Apple Chancery, sans-serif;
-            font-size: 1000%;
             color: #48C9B0;
             vertical-align: central;
+            font-size: calc(4vw + 4vh + 2vmin);
         }
 
         .def {
             position: relative;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Brush Script MT', Bradley Hand, Apple Chancery, sans-serif;
             font-weight: bolder;
-            font-size: 150%;
-            color: #66bfbf;
+            color: #48C9B0;
             margin-top: 1%;
+            font-size: 3.5vw;
         }
 
-        .top-container {
+        .top-container::after {
             background-position: center;
             background-size: 100% 100%;
             margin: 0 auto 0 auto;
             position: relative;
             background-color: #FDFEFE;
-            height: 60rem;
+            height: auto;
+            width: 100%;
+            content: "";
+            display: table;
+            clear: both;
         }
 
         .middle-container {
@@ -103,7 +106,7 @@
             margin-top: 50px;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom:0;
+            margin-bottom: 0;
             height: auto;
         }
 
@@ -117,16 +120,14 @@
         }
 
         .home-screen {
-            vertical-align:;
-            position: relative;
-            margin-top: 0;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 0;
+            position:absolute;
+            margin: 0 auto 0 auto;
+            transform: translate(72%, -20%);
             height: auto;
             width: auto;
             text-align: center;
-            padding-top: 10%;
+            padding-top: 12%;
+            z-index: 1;
         }
 
         .footer {
@@ -167,8 +168,8 @@
         }
 
         .contact-me {
-           height:auto;
-           margin-bottom:50px;
+            height: auto;
+            margin-bottom: 50px;
         }
 
         .btn-primary {
@@ -228,16 +229,24 @@
 
         .quotes {
             color: #48C9B0;
+            font-family: 'Brush Script MT';
+            font-size: 250%;
         }
 
-        #slide {
-            transition: opacity 1s;
-            margin: auto;
-            max-width: 100%;
-            max-height: 100%;
+
+        .row {
+            display: flex; /* equal height of the children */
         }
+
+        .col {
+            flex: 1; /* additionally, equal width */
+
+            padding: 0;
+           
+        }
+
+
     </style>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:5%">
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -249,7 +258,7 @@
                 function googleTranslateElementInit() {
                     new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
                 }
-// ]]></script>
+                // ]]></script>
             <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
@@ -286,73 +295,82 @@
 
 <body>
     <div class="top-container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="home-screen" style="height: auto">
+            <h1 class="name">I'm Yunus.</h1>
+            <h3 class="def">an <u>E</u>lectrical & <u>E</u>lectronics <u>E</u>ngineer</h3>
+            <h3 class="def"><em>loves travelling by heart</em></h3>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img style="width:100%;" id="leftimg" src="images/general/cover.png" alt="" />
+            </div>
+            <div class="col">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin:0; padding:0; width:100%">
 
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-        
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="height:60rem">
-                    <img class="d-block w-100" id="slide" src="images/athens/IMG_6631.JPG" alt="0th slide">
-                </div>
-                <div class="carousel-item" style="height: 60rem">
-                    <img class="d-block w-100" id="slide" src="images/athens/IMG_6463.JPG" alt="1st slide">
-                </div>
-                <div class="carousel-item" style="height: 60rem">
-                    <img class="d-block w-100" id="slide" src="images/barcelona/IMG_9120.JPG" alt="2nd slide">
-                </div>
-                <div class="carousel-item" style="height: 60rem">
-                    <img class="d-block w-100" id="slide" src="images/rome/IMG_7951.JPG" alt="3rd slide">
-                </div>
-                <div class="carousel-item" style="height: 60rem">
-                    <img class="d-block w-100" id="slide" src="images/rome/IMG_7597.JPG" alt="4th slide">
-                </div>
-                <div class="carousel-item" style="height: 60rem">
-                    <img class="d-block w-100" id="slide" src="images/paris/IMG_9323.JPG" alt="5th slide">
-                </div>
-                <div class="carousel-item" style="height: 60rem">
-                    <img class="d-block w-100" id="slide" src="images/paris/IMG_9792.JPG" alt="6th slide">
-                </div>
-                <div class="carousel-item" style="height: 60rem">
-                    <img class="d-block w-100"  id="slide" src="images/amsterdam/IMG_0398.JPG" alt="7th slide">
-                </div>
-                <div class="carousel-item" style="height: 60rem">
-                    <img class="d-block w-100"  id="slide" src="images/amsterdam/IMG_0281.JPG" alt="8th slide">
-                </div>
-                <div class="carousel-item" style="height: 60rem">
-                    <img class="d-block w-100"  id="slide" src="images/brussels/IMG_9926.JPG" alt="9th slide">
-                </div>
-                <div class="carousel-item" style="height: 60rem">
-                    <img class="d-block w-100"  id="slide" src="images/brussels/IMG_9872.JPG" alt="10th slide">
-                </div>
-                <div class="home-screen">
-                    <h1 class="name">I'm Yunus.</h1>
-                    <h3 class="def">an <u>E</u>lectrical & <u>E</u>lectronics <u>E</u>ngineer</h3>
-                    <h3 class="def"><em>loves travelling by heart</em></h3>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="height: auto">
+                            <img class="d-block w-100" id="slide" src="images/athens/IMG_6631.JPG" alt="0th slide">
+                        </div>
+                        <div class="carousel-item" style="height: auto">
+                            <img class="d-block w-100" id="slide" src="images/athens/IMG_6463.JPG" alt="1st slide">
+                        </div>
+                        <div class="carousel-item" style="height: auto">
+                            <img class="d-block w-100" id="slide" src="images/barcelona/IMG_9120.JPG" alt="2nd slide">
+                        </div>
+                        <div class="carousel-item" style="height: auto">
+                            <img class="d-block w-100" id="slide" src="images/rome/IMG_7951.JPG" alt="3rd slide">
+                        </div>
+                        <div class="carousel-item" style="height: auto">
+                            <img class="d-block w-100" id="slide" src="images/paris/IMG_9323.JPG" alt="5th slide">
+                        </div>
+                        <div class="carousel-item" style="height: auto">
+                            <img class="d-block w-100" id="slide" src="images/paris/IMG_9792.JPG" alt="6th slide">
+                        </div>
+                        <div class="carousel-item" style="height: auto">
+                            <img class="d-block w-100" id="slide" src="images/amsterdam/IMG_0398.JPG" alt="7th slide">
+                        </div>
+                        <div class="carousel-item" style="height: auto">
+                            <img class="d-block w-100" id="slide" src="images/amsterdam/IMG_0281.JPG" alt="8th slide">
+                        </div>
+                        <div class="carousel-item" style="height: auto">
+                            <img class="d-block w-100" id="slide" src="images/brussels/IMG_9926.JPG" alt="9th slide">
+                        </div>
+                        <div class="carousel-item" style="height: auto">
+                            <img class="d-block w-100" id="slide" src="images/brussels/IMG_9872.JPG" alt="10th slide">
+                        </div>
+
+
+                    </div>
+                    <!--      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a> -->
                 </div>
             </div>
-            <!--      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-          </a> -->
         </div>
 
+
+
+
     </div>
+
 
     <hr class="hr-style" />
 
@@ -373,7 +391,7 @@
             </p>
             <br>
             <br>
-            <p class="quotes" style="font-size:150%; margin:0 auto 0 auto"><em>"To write a memoir is to save something from the hand of death."</em></p>
+            <p class="quotes" style="margin: 0 auto 0 auto"><em>"To write a memoir is to save something from the hand of death."</em></p>
             <p style="font-size:150%; margin:0 auto 0 auto">André Gide</p>
             <br>
             <p style="font-size:150%; margin-right:10%; margin-left:10%; margin-bottom:0%">
@@ -392,10 +410,10 @@
                             <img class="img-style3" src="images/athens/IMG_6763.JPG" alt="">
                         </td>
                         <td>
-                            <p  style="font-size:150%; margin-top:5%; margin-left:0%; margin-right:0; margin-bottom:0">
+                            <p style="font-size:150%; margin-top:5%; margin-left:0%; margin-right:0; margin-bottom:0">
                                 <em style="color: #48C9B0">"My Heart Beats in..."</em>
                             </p>
-                            <br/>
+                            <br />
                             <p style="font-size:150%; margin-top:0; margin-left:0%; margin-right:0; margin-bottom:10%">
                                 I created this blog thinking that you'll like it and make an effort for this.
                                 <br>
@@ -414,7 +432,7 @@
                             <p style="font-size:150%; margin-top:5%; margin-right:0; margin-left:0; margin-bottom:0%">
                                 <em style="color: #48C9B0">"...suggestions, memories and photos."</em>
                             </p>
-                            <br/>
+                            <br />
                             <p style="font-size:150%; margin-top:0; margin-right:0; margin-left:0; margin-bottom:10%">
                                 I'm going to be sharing <em>photos</em> i have taken, my <em>memories</em> i have and <em>suggestions</em> to do or <u>not</u> to do
                                 in places that i have traveled before.
@@ -438,7 +456,7 @@
                             <p style="font-size:150%; margin-top:5%; margin-left:0%; margin-right:0; margin-bottom:0%">
                                 <em style="color: #48C9B0">"A Cup of Coffee.."</em>
                             </p>
-                            <br/>
+                            <br />
                             <p style="font-size:150%; margin-top:0%; margin-left:0%; margin-right:0; margin-bottom:10%">
                                 This is going to be a new long adventure which we will walk through together ✌️
                                 <br>
@@ -456,7 +474,7 @@
                             <p style="font-size:150%; margin-top:5%; margin-right:0; margin-left:0; margin-bottom:0">
                                 <em style="color: #48C9B0">"Get In Touch!"</em>
                             </p>
-                            <br/>
+                            <br />
                             <p style="font-size:150%; margin-top:0; margin-right:0; margin-left:0; margin-bottom:10%">
                                 I'd like to remind that i'll keep developing my page and be adding new contents inside it.
                                 Also, you will be contributing for me and other people by sharing your memories, photos and
@@ -480,8 +498,8 @@
                             <p style="font-size:150%; margin-top:5%; margin-left:0%; margin-right:0">
                                 <em style="color: #48C9B0">"Let's get started.."</em>
                             </p>
-                            <br/>
-                            <p style="font-size:150%; margin-top:0%; margin-left:0%; margin-right:0">     
+                            <br />
+                            <p style="font-size:150%; margin-top:0%; margin-left:0%; margin-right:0">
                                 Anyway, i'm super excited to begin! And so glad to meet you :)
                                 <br>
                                 Happy reading!
@@ -540,6 +558,8 @@
                 &copy; @DateTime.Now.Year - Yunus Öcel - <a class="footer-link" asp-area="" asp-controller="Pages" asp-action="Privacy">Privacy</a>
             </div>
         </footer>
+
+
 
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

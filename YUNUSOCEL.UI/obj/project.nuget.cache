@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rUYKZuM3IRZ/9Gjk0I4AonfX1tQzfyAAqTd6MvjdP+6UIKgx7Czs1OerZIXLaBnrwfvub1sN0+ej5aRxsfNgtQ==",
+  "dgSpecHash": "Qq2pHaOKodoVMGhNZ/zBsMUhBTEIuN5kIWYIP6U9zqAaz1oUoUlMUE9nwdXf/9/jXBWGbxTZiWkASoAqRcugwg==",
   "success": true,
-  "projectFilePath": "/Users/yocel/Projects/YUNUSOCEL/YUNUSOCEL.UI/YUNUSOCEL.UI.csproj",
+  "projectFilePath": "/Users/yocel/Projects/YUNUSOCEL/yunusocel/YUNUSOCEL.UI/YUNUSOCEL.UI.csproj",
   "expectedPackageFiles": [
     "/Users/yocel/.nuget/packages/microsoft.aspnetcore.mvc.razor.extensions/3.1.19/microsoft.aspnetcore.mvc.razor.extensions.3.1.19.nupkg.sha512",
     "/Users/yocel/.nuget/packages/microsoft.aspnetcore.mvc.razor.runtimecompilation/3.1.19/microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.19.nupkg.sha512",
